@@ -3,8 +3,8 @@ container.setAttribute("class","container")
 
 let rowAnimal = document.createElement("div");
 rowAnimal.setAttribute("class","row")
-
-async function duck(){
+////////////// FETCHING THE ANIMALS/////////////////////
+async function zooAni(){
     let zoo = await fetch("https://zoo-animal-api.herokuapp.com/animals/rand/10")
     let zooAnimals= await zoo.json();
     
@@ -12,6 +12,7 @@ async function duck(){
         if (Response == 200){
             throw new Error("please check the URL")
         }
+        ///////////LOOPING TO ADD TEN ANIMALS /////////////////
         for (let i=0;i<zooAnimals.length;i++){
             let colAnimal = document.createElement("div");
             colAnimal.setAttribute("class","col-md-6")
@@ -43,6 +44,7 @@ async function duck(){
         colAnimal.innerHTML="please check the url"
         console.log(error)
     }
+    /////////////////CLEARING THE PREVIOUS 10 ANIMALS TO DISPLAY CURRENT RANDOM//////////////////////
     let colQUuery = document.querySelectorAll(".col-md-6")
     if(colQUuery.length == 20){
         for(let i=0;i<colQUuery.length-10;i++){
@@ -62,7 +64,7 @@ div.setAttribute("class","button-space")
 let btn = document.createElement("button");
 btn.setAttribute("id","button");
 btn.innerHTML="CLICK FOR RANDOM 10 ANIMALS"
-btn.addEventListener("click",duck );
+btn.addEventListener("click",zooAni );
 
 
 div.append(btn)
