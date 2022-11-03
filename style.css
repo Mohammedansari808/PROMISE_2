@@ -2,13 +2,13 @@
 /* ////////////////FOR CONTAINER//////////////////// */
 .container{
     margin-top: 50px;
-background-image: url("./national_geographic_nature_animal_forest_color_tree_hdr_ultrahd_black_white_hd_4k_wallpaper_1920x1200.jpg");
+background-image: url("./assets/national_geographic_nature_animal_forest_color_tree_hdr_ultrahd_black_white_hd_4k_wallpaper_1920x1200.jpg");
 background-attachment: fixed;
 
 }
 body{
     
-    background-image: url("./national_geographic_nature_animal_forest_color_tree_hdr_ultrahd_black_white_hd_4k_wallpaper_1920x1200.jpg");
+    background-image: url("./assets/national_geographic_nature_animal_forest_color_tree_hdr_ultrahd_black_white_hd_4k_wallpaper_1920x1200.jpg");
     
     background-attachment:  fixed;
     }
@@ -90,7 +90,7 @@ border-radius: 50px;
 border: orange;
 background-color: transparent;
 cursor: pointer;
-background-image: url("./nav-bg-fill-blue.png");
+background-image: url("./assets/nav-bg-fill-blue.png");
 background-position: 0 -80%;
 background-repeat: repeat-x;
 transition: ease 1.5s;
